@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+@theme {
+	--font-geist: 'geist', ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+	--color-blue: #0070f3;
+	--color-green: #20cda6;
+	--color-red: #e00;
+}
+
+@layer base {
+  html {
+    -webkit-tap-highlight-color: transparent;
+		color-scheme: dark;
+		width: 100%;
+    height: 100%;
+  }
+
+  body {
+		background-color: var(--color-zinc-950);
+		color: var(--color-zinc-50);
+		font-family: var(--font-geist);
+		overflow-x: hidden;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+
+		width: 100%;
+    height: 100%;
+  }
+
+	#__nuxt {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+    height: 100%;
+	}
+}
