@@ -25,6 +25,7 @@
 		"less",
 		"scss",
 		"pcss",
-		"postcss"
+		"postcss",
+		"tailwindcss"
 	]
 }

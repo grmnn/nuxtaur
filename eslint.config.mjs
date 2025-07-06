@@ -1,8 +1,10 @@
-import antfuEslintConfig from '@antfu/eslint-config'
-import nuxtEslintConfig from './.nuxt/eslint.config.mjs'
+import antfu from '@antfu/eslint-config'
+import format from 'eslint-plugin-format'
+import withNuxt from './.nuxt/eslint.config.mjs'
 
-export default nuxtEslintConfig(
-	antfuEslintConfig({
+export default withNuxt(
+	antfu({
+		css: true,
 		stylistic: {
 			indent: 'tab',
 			semi: false,
@@ -13,14 +15,14 @@ export default nuxtEslintConfig(
 		ignores: [
 			'src-tauri/gen/**',
 			'src-tauri/target/**',
+			'src-tauri/**/*.rs',
 		],
 	}),
 	{
 		rules: {
 			'style/brace-style': ['error', '1tbs', { allowSingleLine: true }],
 			'style/arrow-parens': ['error', 'always'],
-			'no-console': 'warn',
-			'curly': ['error', 'all'],
+			'no-console': ['error', { allow: ['info', 'warn', 'error'] }],
 			'vue/max-attributes-per-line': [
 				'error',
 				{
@@ -41,6 +43,26 @@ export default nuxtEslintConfig(
 				svg: 'always',
 				math: 'always',
 			}],
+		},
+	},
+	{
+		files: ['**/*.css'],
+		languageOptions: {
+			parser: format.parserPlain,
+		},
+		plugins: {
+			format,
+		},
+		rules: {
+			'format/prettier': [
+				'error',
+				{
+					parser: 'css',
+					tabWidth: 2,
+					printWidth: 200,
+					useTabs: true,
+				},
+			],
 		},
 	},
 )
