@@ -48,9 +48,6 @@ importers:
       '@storybook/vue3-vite':
         specifier: ^9.0.15
         version: 9.0.15(storybook@9.0.15(@testing-library/dom@10.4.0)(prettier@3.6.2))(vite@6.0.7(@types/node@22.10.5)(jiti@2.4.2)(lightningcss@1.28.2)(terser@5.37.0)(yaml@2.8.0))(vue@3.5.13(typescript@5.7.2))
-      '@tailwindcss/postcss':
-        specifier: ^4.0.0-beta.8
-        version: 4.0.0-beta.8
       '@tailwindcss/vite':
         specifier: ^4.0.0-beta.8
         version: 4.0.0-beta.8(vite@6.0.7(@types/node@22.10.5)(jiti@2.4.2)(lightningcss@1.28.2)(terser@5.37.0)(yaml@2.8.0))
@@ -92,10 +89,6 @@ packages:
 
   '@adobe/css-tools@4.4.1':
     resolution: {integrity: sha512-12WGKBQzjUAI4ayyF4IAtfw2QR/IDoqk6jTddXDhtYTJF9ASmoE1zst7cVtP0aL/F1jUJL5r+JxKXKEgHNbEUQ==}
-
-  '@alloc/quick-lru@5.2.0':
-    resolution: {integrity: sha512-UrcABB+4bUrFABwbluTIBErXwvbsU/V7TZWfmbgJfbkwiBuziS9gxdODUyuiecfdGQ85jglMW6juS3+z5TsKLw==}
-    engines: {node: '>=10'}
 
   '@ampproject/remapping@2.3.0':
     resolution: {integrity: sha512-30iZtAPgz+LTIYoeivqYo853f02jBYSd5uGnGpkFV0M3xOt9aN73erkgYAmZU43x4VfqcnLxW9Kpg3R5LC4YYw==}
@@ -1449,9 +1442,6 @@ packages:
   '@tailwindcss/oxide@4.0.0-beta.8':
     resolution: {integrity: sha512-fpZkAwKDFuRNbxQZrXViij2D38R6qqgAnctBR9NPyHxZqYDjn3uyk75alrDnSGj4wUCTAhOCEX4HCI9xCgKGdA==}
     engines: {node: '>= 10'}
-
-  '@tailwindcss/postcss@4.0.0-beta.8':
-    resolution: {integrity: sha512-fdxUB9iRm4QocxXiAX/6NlU/VQG/IU1NlDMSGcwvR91/lZNVmWElialB4AVzdsZXIpv5xgrbmz9bb4nvPrT2Ug==}
 
   '@tailwindcss/vite@4.0.0-beta.8':
     resolution: {integrity: sha512-ZNlj0fdeH4/uWXafrXklZY+TgmN7wOHWHHBL4i3xzD4BflcCDZJkgJER/8baJCpagMzwWDnA6CyXDX+2q7lMRQ==}
@@ -5373,8 +5363,6 @@ snapshots:
 
   '@adobe/css-tools@4.4.1': {}
 
-  '@alloc/quick-lru@5.2.0': {}
-
   '@ampproject/remapping@2.3.0':
     dependencies:
       '@jridgewell/gen-mapping': 0.3.8
@@ -6755,15 +6743,6 @@ snapshots:
       '@tailwindcss/oxide-linux-x64-musl': 4.0.0-beta.8
       '@tailwindcss/oxide-win32-arm64-msvc': 4.0.0-beta.8
       '@tailwindcss/oxide-win32-x64-msvc': 4.0.0-beta.8
-
-  '@tailwindcss/postcss@4.0.0-beta.8':
-    dependencies:
-      '@alloc/quick-lru': 5.2.0
-      '@tailwindcss/node': 4.0.0-beta.8
-      '@tailwindcss/oxide': 4.0.0-beta.8
-      lightningcss: 1.28.2
-      postcss: 8.4.49
-      tailwindcss: 4.0.0-beta.8
 
   '@tailwindcss/vite@4.0.0-beta.8(vite@6.0.7(@types/node@22.10.5)(jiti@2.4.2)(lightningcss@1.28.2)(terser@5.37.0)(yaml@2.8.0))':
     dependencies:

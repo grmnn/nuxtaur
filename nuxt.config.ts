@@ -1,3 +1,5 @@
+import tailwindcss from '@tailwindcss/vite'
+
 export default defineNuxtConfig({
 	app: {
 		head: {
@@ -27,17 +29,15 @@ export default defineNuxtConfig({
 		compatibilityVersion: 4,
 	},
 	modules: ['@nuxt/eslint', '@pinia/nuxt', '@vueuse/nuxt'],
-	postcss: {
-		plugins: {
-			'@tailwindcss/postcss': {},
-		},
-	},
 	typescript: {
 		strict: true,
 	},
 
 	ssr: false,
 	vite: {
+		plugins: [
+			tailwindcss(),
+		],
 		clearScreen: false,
 		envPrefix: ['VITE_', 'TAURI_'],
 		server: {

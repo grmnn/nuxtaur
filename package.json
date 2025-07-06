@@ -28,7 +28,6 @@
 		"@nuxt/eslint": "^1.5.2",
 		"@storybook/addon-docs": "^9.0.15",
 		"@storybook/vue3-vite": "^9.0.15",
-		"@tailwindcss/postcss": "^4.0.0-beta.8",
 		"@tailwindcss/vite": "^4.0.0-beta.8",
 		"@tauri-apps/cli": "^2.2.2",
 		"@vitejs/plugin-vue": "^5.2.1",
